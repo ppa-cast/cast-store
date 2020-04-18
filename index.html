@@ -14,8 +14,10 @@ const oneMonth = oneDay * 30;
 var generate = (json, template) => {
     var extensions = {};
     json.rows.forEach((it) => {
+        
+        // Not yet public !
         if (it.id == "com.castsoftware.carlcli") return;
-       
+        
         var extension = extensions[it.id];
         if (! extension) {
             extension = extensions[it.id] = {
@@ -23,17 +25,19 @@ var generate = (json, template) => {
                 downloads: it.downloads,
                 type: it.type, 
                 createdOn: new Date(it.created),
-                updatedOn: new Date(it.created),
                 analyzer: it.analyzer, 
                 provider: it.author, 
                 version: it.version,
                 iconurl: "https://extendng.castsoftware.com/img/empty.png"};
         }
+
+        // publishedOn for the latest version only
+        if (it.absoluteLatest) 
+            extension.publishedOn = new Date(it.published);
+        
+        // createdOn is the oldest date
         if (it.created && extension.createdOn > new Date(it.created)) {
             extension.createdOn = new Date(it.created);
-        }
-        if (it.updated && extension.updatedOn < new Date(it.created)) {
-            extension.updatedOn = new Date(it.created);
         }
         if (it.iconurl) extensions[it.id].iconurl = it.iconurl;
     });
@@ -43,7 +47,7 @@ var generate = (json, template) => {
             (acc, it) => {
                 var extension = extensions[it];
                 if (((new Date()).getTime() - extension.createdOn.getTime()) < oneMonth)
-                    acc.push({title: extension.title, version: extension.version, date: extension.updatedOn, id:it, downloads: extension.downloads, iconurl: extension.iconurl});
+                    acc.push({title: extension.title, version: extension.version, date: extension.publishedOn, id:it, downloads: extension.downloads, iconurl: extension.iconurl});
                 return acc;
             }, []);
          arr = arr.sort((it1, it2) => it2.date - it1.date);
@@ -54,11 +58,9 @@ var generate = (json, template) => {
         var arr = Object.keys(extensions).reduce(
             (acc, it) => {
                 var extension = extensions[it];    
-               // if (it == "com.castsoftware.typescript") console.log(extension.version, extension.date, ((new Date()).getTime() -extension.createdOn.getTime()) > oneMonth , ((new Date()).getTime() - extension.updatedOn.getTime()) < oneMonth);
-                
                 if (((new Date()).getTime() - extension.createdOn.getTime()) > oneMonth &&
-                    ((new Date()).getTime() - extension.updatedOn.getTime()) < oneMonth)
-                    acc.push({title: extension.title, version: extension.version, date: extension.updatedOn, id:it, downloads: extension.downloads, iconurl: extension.iconurl});
+                    ((new Date()).getTime() - extension.publishedOn.getTime()) < oneMonth)
+                    acc.push({title: extension.title, version: extension.version, date: extension.publishedOn, id:it, downloads: extension.downloads, iconurl: extension.iconurl});
                 return acc;
             }, []);
          arr = arr.sort((it1, it2) => it2.date - it1.date);
