@@ -66,80 +66,23 @@ body { background-color: #eee;}
 }
 
 .tile-title {
-      /*text-transform: uppercase;*/
-      text-align: center;
-      margin-top: 10px;
-      font-size: 15px;
-      height: 32px;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 15px;
+    height: 64px;
       
-      font-family: 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
-      font-weight: 200;
-      letter-spacing: 0.01em;
+    font-family: 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    letter-spacing: 0.01em;
 }
 
     
 .tile-value {
-      text-align: right;
-      font-size: 15px;
-      margin-top: 40px;
-
-      font-family: 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
-      font-weight: 200;
-      letter-spacing: 0.01em;
-    }
-
-.table-bordered {
-  border: 1px solid #dddddd;
-  border-collapse: separate;
-  border-collapse: collapse;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-
-  max-width: 100%;
-  border-spacing: 0;
-  width: 100%;
-  margin-bottom: 20px;
-  
-  background-color: #ffffff;
-}
-
-.table-bordered th,
-.table-bordered td {
-  padding: 8px;
-  line-height: 20px;
-  text-align: left;
-  vertical-align: top;
-  border-top: 1px solid #dddddd;
-}
-.table-bordered th {
-  font-weight: bold;
-}
-.table-bordered thead th {
-  vertical-align: bottom;
-}
-.table-bordered caption + thead tr:first-child th,
-.table-bordered caption + thead tr:first-child td,
-.table-bordered colgroup + thead tr:first-child th,
-.table-bordered colgroup + thead tr:first-child td,
-.table-bordered thead:first-child tr:first-child th,
-.table-bordered thead:first-child tr:first-child td {
-  border-top: 0;
-}
-.table-bordered tbody + tbody {
-  border-top: 2px solid #dddddd;
-}
-.table-bordered tbody tr.success > td {
-  background-color: #dff0d8;
-}
-.table-bordered tbody tr.error > td {
-  background-color: #f2dede;
-}
-.table-bordered tbody tr.warning > td {
-  background-color: #fcf8e3;
-}
-.table-bordered tbody tr.info > td {
-  background-color: #d9edf7;
+    text-align: right;
+    font-size: 15px;
+    font-family: 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    letter-spacing: 0.01em;
 }
 
 .a, .a:visited{
@@ -155,8 +98,6 @@ img {
     margin-right: auto;    
 }
 
-
-
 </style>
     
 </head>
@@ -167,14 +108,14 @@ img {
 <%
 recentExtensions.added.forEach ((ext) => {
     %>
-    <div style="display: inline-block;padding-top:10px">    
+    <div title="<%=ext.description%>" style="display: inline-block;padding-top:10px">    
         <a style="text-decoration: none;color:inherit;" href="https://extendng.castsoftware.com/#/extension?id=<%=ext.id%>&version=<%=ext.version%>" target="_blank">
             <div class="tile">
                 <div style="width:92px;height:92px;margin-left:auto;margin-right:auto;">
                     <img src="<%=ext.iconurl%>" onerror="this.src='https://extendng.castsoftware.com/img/empty.png'"/>
                 </div>    
                 <div class="tile-title"><%=ext.title%></div>
-                <div class="tile-value"><%=ext.date.toString().substr(4,11)%></div>
+                <div class="tile-value"><%=ext.version%><br><%=ext.date.toString().substr(4,11)%></div>
             </div>
         </a>
     </div>
@@ -187,14 +128,14 @@ recentExtensions.added.forEach ((ext) => {
 <%
 recentExtensions.updated.forEach ((ext) => {
     %>
-    <div style="display: inline-block;padding-top:10px">    
+    <div title="<%=ext.description%>" style="display: inline-block;padding-top:10px">    
         <a style="text-decoration: none;color:inherit;" href="https://extendng.castsoftware.com/#/extension?id=<%=ext.id%>&version=<%=ext.version%>" target="_blank">
             <div class="tile">
                 <div style="width:92px;height:92px;margin-left:auto;margin-right:auto;">
                     <img src="<%=ext.iconurl%>" onerror="this.src='https://extendng.castsoftware.com/img/empty.png'"/>
                 </div>    
                 <div class="tile-title"><%=ext.title%></div>
-                <div class="tile-value"><%=ext.date.toString().substr(4,11)%></div>
+                <div class="tile-value"><%=ext.version%><br><%=ext.date.toString().substr(4,11)%></div>
             </div>
         </a>
     </div>
