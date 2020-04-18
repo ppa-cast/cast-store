@@ -17,7 +17,6 @@ var generate = (json, template) => {
         
         // Not yet public !
         if (it.id == "com.castsoftware.carlcli") return;
-        
         var extension = extensions[it.id];
         if (! extension) {
             extension = extensions[it.id] = {
@@ -26,8 +25,8 @@ var generate = (json, template) => {
                 type: it.type, 
                 createdOn: new Date(it.created),
                 analyzer: it.analyzer, 
-                provider: it.author, 
-                iconurl: "https://extendng.castsoftware.com/img/empty.png"};
+                provider: it.author
+            };
         }
 
         // Save some properties for the latest version only
@@ -35,13 +34,13 @@ var generate = (json, template) => {
             extension.version = it.version;
             extension.description = it.description;
             extension.publishedOn = new Date(it.published);
+            extension.iconurl = it.iconurl;
         }
         
         // createdOn is the oldest date
         if (it.created && extension.createdOn > new Date(it.created)) {
             extension.createdOn = new Date(it.created);
         }
-        if (it.iconurl) extensions[it.id].iconurl = it.iconurl;
     });
 
     var addedLast30days = () => {
