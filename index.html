@@ -1,0 +1,90 @@
+<html>
+<head>
+<script src="jquery.min.js"></script>
+<script src="ejs.min.js"></script>
+</head>
+<body>
+<div id="output"></div>
+
+<script>
+const oneDay = 24 * 60 * 60 * 1000; // hours*minutes*seconds*milliseconds
+const oneWeek = oneDay * 7;
+const oneMonth = oneDay * 30;
+
+var generate = (json, template) => {
+    var extensions = {};
+    json.rows.forEach((it) => {
+        if (it.id == "com.castsoftware.carlcli") return;
+       
+        var extension = extensions[it.id];
+        if (! extension) {
+            extension = extensions[it.id] = {
+                title: it.title,                
+                downloads: it.downloads,
+                type: it.type, 
+                createdOn: new Date(it.created),
+                updatedOn: new Date(it.created),
+                analyzer: it.analyzer, 
+                provider: it.author, 
+                version: it.version,
+                iconurl: "https://extendng.castsoftware.com/img/empty.png"};
+        }
+        if (it.created && extension.createdOn > new Date(it.created)) {
+            extension.createdOn = new Date(it.created);
+        }
+        if (it.updated && extension.updatedOn < new Date(it.created)) {
+            extension.updatedOn = new Date(it.created);
+        }
+        if (it.iconurl) extensions[it.id].iconurl = it.iconurl;
+    });
+
+    var createdLast30days = () => {
+        var arr = Object.keys(extensions).reduce(
+            (acc, it) => {
+                var extension = extensions[it];
+                if (((new Date()).getTime() - extension.createdOn.getTime()) < oneMonth)
+                    acc.push({title: extension.title, version: extension.version, date: extension.updatedOn, id:it, downloads: extension.downloads, iconurl: extension.iconurl});
+                return acc;
+            }, []);
+         arr = arr.sort((it1, it2) => it2.date - it1.date);
+        return arr; 
+    }
+    
+    var updatedLast30days = () => {
+        var arr = Object.keys(extensions).reduce(
+            (acc, it) => {
+                var extension = extensions[it];    
+               // if (it == "com.castsoftware.typescript") console.log(extension.version, extension.date, ((new Date()).getTime() -extension.createdOn.getTime()) > oneMonth , ((new Date()).getTime() - extension.updatedOn.getTime()) < oneMonth);
+                
+                if (((new Date()).getTime() - extension.createdOn.getTime()) > oneMonth &&
+                    ((new Date()).getTime() - extension.updatedOn.getTime()) < oneMonth)
+                    acc.push({title: extension.title, version: extension.version, date: extension.updatedOn, id:it, downloads: extension.downloads, iconurl: extension.iconurl});
+                return acc;
+            }, []);
+         arr = arr.sort((it1, it2) => it2.date - it1.date);
+        return arr; 
+    }
+
+    var recentExtensions ={
+        added: createdLast30days(),
+        updated: updatedLast30days(),        
+    };
+    return  ejs.render(template, {recentExtensions: recentExtensions}, null);
+}
+
+
+var render = (json, template) => {
+    var html = generate(json[0], template[0]);
+    $('#output').html(html);
+}
+
+var unavailable = (e) => {
+    console.log(e);
+    alert("Service unavailable");
+}
+
+$.when( $.ajax( "https://extendng.castsoftware.com/api/package" ), $.ajax( "/template.html" ) )
+  .then( render, unavailable );
+
+</script> 
+</body>
