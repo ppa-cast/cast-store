@@ -83,7 +83,7 @@ var unavailable = (e) => {
     alert("Service unavailable");
 }
 
-$.when( $.ajax( "https://extendng.castsoftware.com/api/package" ), $.ajax( "/template.html" ) )
+$.when( $.ajax( "https://extendng.castsoftware.com/api/package" ), $.ajax( "template.html" ) )
   .then( render, unavailable );
 
 </script> 
