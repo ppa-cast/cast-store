@@ -44,7 +44,7 @@ var generate = (json, template) => {
         if (it.iconurl) extensions[it.id].iconurl = it.iconurl;
     });
 
-    var createdLast30days = () => {
+    var addedLast30days = () => {
         var arr = Object.keys(extensions).reduce(
             (acc, it) => {
                 var extension = extensions[it];
@@ -62,7 +62,7 @@ var generate = (json, template) => {
         return arr; 
     }
     
-    var updatedLast30days = () => {
+    var upgradedLast30days = () => {
         var arr = Object.keys(extensions).reduce(
             (acc, it) => {
                 var extension = extensions[it];    
@@ -83,8 +83,8 @@ var generate = (json, template) => {
     }
 
     var recentExtensions ={
-        added: createdLast30days(),
-        updated: updatedLast30days(),        
+        added: addedLast30days(),
+        upgraded: upgradedLast30days(),        
     };
     return  ejs.render(template, {recentExtensions: recentExtensions}, null);
 }
