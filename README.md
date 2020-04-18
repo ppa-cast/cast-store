@@ -1,3 +1,3 @@
-A simple webapp to displlay most recent changes in the CAST store.
-This webapp is developped with jquery, ejs, and the extendng.castsoftware.com api
+A simple webapp to display most recent changes in the CAST store of extensions.
+This webapp is developped with jquery, ejs, and the https://extendng.castsoftware.com api
 
