@@ -52,6 +52,7 @@ var generate = (json, template) => {
                     acc.push({title: extension.title, 
                               version: extension.version, 
                               date: extension.publishedOn, 
+                              age: getDuration (extension.publishedOn, new Date()),
                               id:it, 
                               downloads: extension.downloads, 
                               provider:extension.provider,
@@ -71,6 +72,7 @@ var generate = (json, template) => {
                     acc.push({title: extension.title, 
                               version: extension.version, 
                               date: extension.publishedOn, 
+                              age: getDuration (extension.publishedOn, new Date()),
                               id:it, 
                               downloads: extension.downloads, 
                               description: extension.description,
@@ -89,6 +91,44 @@ var generate = (json, template) => {
     return  ejs.render(template, {recentExtensions: recentExtensions}, null);
 }
 
+// This script is released to the public domain and may be used, modified and
+// distributed without restrictions. Attribution not necessary but appreciated.
+// Source: https://weeknumber.net/how-to/javascript
+
+// Returns the ISO week of the date.
+Date.prototype.getWeek = function() {
+  var date = new Date(this.getTime());
+  date.setHours(0, 0, 0, 0);
+  // Thursday in current week decides the year.
+  date.setDate(date.getDate() + 3 - (date.getDay() + 6) % 7);
+  // January 4 is always in week 1.
+  var week1 = new Date(date.getFullYear(), 0, 4);
+  // Adjust to Thursday in week 1 and count number of weeks from date to week1.
+  return 1 + Math.round(((date.getTime() - week1.getTime()) / 86400000
+                        - 3 + (week1.getDay() + 6) % 7) / 7);
+}
+
+var getDuration = (before, after) => {
+        let days = Math.round(((new Date(after).setHours(0,0,0,0)) - (new Date(before).setHours(0,0,0,0))) / (24*60*60*1000));
+        let weeks = after.getWeek() - before.getWeek();
+
+        if (days === 0)
+            return "today";
+
+        if (days === 1)
+            return "yesterday";
+
+        if (days < 4)
+            return days + " days ago";
+            
+        if (weeks === 0) 
+           return "this week";
+           
+        if (weeks === 1) 
+           return "last week";
+        
+        return weeks + " weeks ago";
+}
 
 var render = (json, template) => {
     var html = generate(json[0], template[0]);
