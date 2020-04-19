@@ -3,8 +3,33 @@
 <head>
 <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
 <script src="https://npmcdn.com/ejs@3.0.2/ejs.min.js"></script>
+
+<style>
+body { background-color: #eee;}
+
+@keyframes spinner {
+  to {transform: rotate(360deg);}
+}
+ 
+.spinner:before {
+  content: '';
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+  margin-left: -10px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  border-top-color: #000;
+  animation: spinner .6s linear infinite;
+}
+</style>
 </head>
 <body>
+<div id="spinner" class="spinner"></div>
 <div id="output"></div>
 
 <script>
@@ -18,6 +43,7 @@ var collect = (json) => {
         var extension = extensions[it.id];
         if (! extension) {
             extension = extensions[it.id] = {
+                id: it.id,
                 title: it.title,    
                 downloads: it.downloads,
                 type: it.type, 
@@ -114,12 +140,14 @@ var getDuration = (before, after) => {
 }
 
 var render = (json, template) => {
+    $('#spinner').removeClass('spinner');
     var recentExtensions = collect(json[0]);
     var html = ejs.render(template[0], {recentExtensions: recentExtensions}, null);    
     $('#output').html(html);
 }
 
 var unavailable = (e) => {
+    $('#spinner').removeClass('spinner');
     $('#output').html('Service not available, please check <a href="https://extendng.castsoftware.com">https://extendng.castsoftware.com</a>');
 }
 
