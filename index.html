@@ -15,9 +15,6 @@ const oneMonth = oneDay * 30;
 var generate = (json, template) => {
     var extensions = {};
     json.rows.forEach((it) => {
-        
-        // Not yet public !
-        if (it.id == "com.castsoftware.carlcli") return;
         var extension = extensions[it.id];
         if (! extension) {
             extension = extensions[it.id] = {
