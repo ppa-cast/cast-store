@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script src="jquery.min.js"></script>
-<script src="ejs.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+<script src="https://npmcdn.com/ejs@3.0.2/ejs.min.js"></script>
 </head>
 <body>
 <div id="output"></div>
 
 <script>
 const oneDay = 24 * 60 * 60 * 1000; // hours*minutes*seconds*milliseconds
-const oneWeek = oneDay * 7;
 const oneMonth = oneDay * 30;
 
 var generate = (json, template) => {
