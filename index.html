@@ -14,6 +14,7 @@ const oneMonth = oneDay * 30;
 var generate = (json, template) => {
     var extensions = {};
     json.rows.forEach((it) => {
+        if (! it.listed) return;
         var extension = extensions[it.id];
         if (! extension) {
             extension = extensions[it.id] = {
