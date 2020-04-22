@@ -71,6 +71,7 @@ var collect = (json) => {
             extension.date = extension.publishedOn = new Date(it.published);
             extension.age = getDuration (extension.publishedOn, new Date());            
             extension.iconurl = it.iconurl;
+            extension.versionType = it.versionType;
         }
         
         // createdOn is the oldest date
@@ -95,6 +96,23 @@ var collect = (json) => {
         var arr = Object.keys(extensions).reduce(
             (acc, it) => {
                 var extension = extensions[it];    
+                if ((extension.provider === "CAST Product") 
+                    && (extension.versionType === "funcrel" || extension.versionType === "lts")) return acc;
+                if (((new Date()).getTime() - extension.createdOn.getTime()) > oneMonth &&
+                    ((new Date()).getTime() - extension.publishedOn.getTime()) < oneMonth)
+                        acc.push(extension);
+                return acc;
+            }, []);
+         arr = arr.sort((it1, it2) => it2.date - it1.date);
+        return arr; 
+    }
+    
+    var releasedLast30days = () => {
+        var arr = Object.keys(extensions).reduce(
+            (acc, it) => {
+                var extension = extensions[it];    
+                if (extension.provider !== "CAST Product") return acc;
+                if (extension.versionType !== "funcrel" && extension.versionType !== "lts") return acc;
                 if (((new Date()).getTime() - extension.createdOn.getTime()) > oneMonth &&
                     ((new Date()).getTime() - extension.publishedOn.getTime()) < oneMonth)
                         acc.push(extension);
@@ -106,7 +124,8 @@ var collect = (json) => {
 
     var recentExtensions = {
         added: addedLast30days(),
-        upgraded: upgradedLast30days(),        
+        upgraded: upgradedLast30days(),
+        released: releasedLast30days()
     };
     
     return recentExtensions;
