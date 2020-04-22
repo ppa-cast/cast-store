@@ -148,5 +148,11 @@ recentExtensions.released.forEach ((ext) => {renderTile(ext); });
 recentExtensions.upgraded.forEach ((ext) => {renderTile(ext); });
 %>
 
+<div class="title" style="margin-top:30px;">Recommended</div>
+<div class="sub-title">Promoted extensions</div> 
+<%
+recentExtensions.promoted.forEach ((ext) => {renderTile(ext); });
+%>
+
 </body>
 </html>

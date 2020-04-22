@@ -72,6 +72,7 @@ var collect = (json) => {
             extension.age = getDuration (extension.publishedOn, new Date());            
             extension.iconurl = it.iconurl;
             extension.versionType = it.versionType;
+            extension.promoted = it.promoted;
         }
         
         // createdOn is the oldest date
@@ -121,11 +122,24 @@ var collect = (json) => {
          arr = arr.sort((it1, it2) => it2.date - it1.date);
         return arr; 
     }
+    
+    var promoted = () => {
+        var arr = Object.keys(extensions).reduce(
+            (acc, it) => {
+                var extension = extensions[it];    
+                if (extension.promoted)
+                    acc.push(extension);
+                return acc;
+            }, []);
+         arr = arr.sort((it1, it2) => it2.date - it1.date);
+        return arr; 
+    }
 
     var recentExtensions = {
         added: addedLast30days(),
         upgraded: upgradedLast30days(),
-        released: releasedLast30days()
+        released: releasedLast30days(),
+        promoted: promoted()
     };
     
     return recentExtensions;
