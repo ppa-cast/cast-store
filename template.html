@@ -109,7 +109,7 @@ button {
     background-color: #4CAF50; /* Green */
     border: none;
     color: white;
-    padding: 8px;
+    padding: 4px;
     vertical-align: middle;
     text-align: center;
     text-decoration: none;
@@ -117,7 +117,7 @@ button {
     font-size: 16px;
     cursor: pointer;
     
-    border-radius: 8px;
+    border-radius: 6px;
 }
 
 button:hover {
@@ -153,10 +153,11 @@ var renderTiles = (title, subtitle, list, cls) => {
     <span><%=title%></span>
     <% console.log(list.length); 
     if (list.length > 6) { %>
-        <button onClick="$('.<%=cls%>').toggle()">More</button>
+        <button class=<%=cls%> onClick="$('.<%=cls%>').toggle()">More</button>
     <% 
     }
     %>
+    </div>
     <div class="sub-title"><%=subtitle%></div> 
     <%
     list.forEach ((ext, idx) => {renderTile(ext, idx, cls); });
