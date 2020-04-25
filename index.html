@@ -59,12 +59,12 @@ var collect = (json) => {
                 id: it.id,
                 title: it.title,    
                 type: it.type, 
-                createdOn: new Date(it.created),
+                createdOn: new Date(it.published), // do not use it.created, this is an odd date
                 analyzer: it.analyzer, 
                 provider: it.author
             };
         }
-
+         
         // Save some properties for the latest version only
         if (it.absoluteLatest) {
             let downloads = extension.downloads = it.downloads;
@@ -76,14 +76,13 @@ var collect = (json) => {
             extension.versionType = it.versionType;
             extension.promoted = it.promoted;
             extension.category = extensionsDirectory[it.id] || "unclassified";
-            let weeks = (new Date() - date) / oneWeek;  
-            extension.score = downloads / weeks; // average number of downloads per week    
-
         }
-        
-        // createdOn is the oldest date
-        if (it.created && extension.createdOn > new Date(it.created)) {
-            extension.createdOn = new Date(it.created);
+
+        // createdOn is the oldest date, it.downloads is the total download
+        if (it.published && extension.createdOn >= new Date(it.published)) {
+            extension.createdOn = new Date(it.published);
+            let weeks = (new Date() - extension.createdOn) / oneWeek;  
+            extension.score = it.downloads / weeks; // average number of downloads per week    
         }
     });
 
