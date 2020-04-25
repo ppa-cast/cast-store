@@ -141,7 +141,7 @@ img {
 var renderTile = (ext, idx, cls) => { 
     %>
     <span <%=idx > 6 ? ('class=' + cls +  ' style=display:none;') : ''%>>
-        <div title="<%=ext.downloads%> downloads" style="display: inline-block;padding-top:10px"> 
+        <div title="<%=ext.downloads%> downloads since <%=ext.createdOn.toString().substr(4,11)%>" style="display: inline-block;padding-top:10px"> 
             <a style="text-decoration: none;color:inherit;" href="https://extendng.castsoftware.com/#/extension?id=<%=ext.id%>&version=<%=ext.version%>">
                 <div class="tile">
                     <div style="width:92px;height:92px;margin-left:auto;margin-right:auto;">
