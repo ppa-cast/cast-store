@@ -186,26 +186,66 @@ Date.prototype.getWeek = function() {
                         - 3 + (week1.getDay() + 6) % 7) / 7);
 }
 
+// get number of years  between two dates
+var getYearsBetween = (before,  after) => {
+   return after.getFullYear() - before.getFullYear();
+}
+
+// get number of months between 2 dates;
+var getMonthsBetween = (before, after) => { 
+    if (after.getFullYear() === before.getFullYear())
+        return after.getMonth() - before.getMonth();
+    var deltaYears = after.getFullYear() - before.getFullYear();
+    var deltaMonths = after.getMonth() + (11 - before.getMonth()) + 1;
+    return deltaMonths + (deltaYears-1)*12;
+}
+    
+// get number of weeks  between 2 dates    
+var getWeeksBetween = (before, after) => { 
+    if (after.getFullYear() === before.getFullYear())
+        return after.getWeek() - before.getWeek();
+    var deltaYears = after.getFullYear() - before.getFullYear();
+    var deltaWeeks = after.getWeek() + (52 - before.getWeek()) + 1;
+    return deltaWeeks + (deltaYears-1)*12;
+}
+
+// get number of days between two dates
+var getDaysBetween = (before, after) => {
+    return Math.round(((new Date(after).setHours(0,0,0,0)) - (new Date(before).setHours(0,0,0,0))) / (24*60*60*1000));
+}
+
 var getDuration = (before, after) => {
-        let days = Math.round(((new Date(after).setHours(0,0,0,0)) - (new Date(before).setHours(0,0,0,0))) / (24*60*60*1000));
-        let weeks = after.getWeek() - before.getWeek();
-
-        if (days === 0)
-            return "today";
-
-        if (days === 1)
-            return "yesterday";
-
-        if (days < 4)
-            return days + " days ago";
-            
-        if (weeks === 0) 
-           return "this week";
-           
-        if (weeks === 1) 
-           return "last week";
+    let format = (nb, unit) => (nb === 1) ? (nb + " " + unit + " ago") : (nb + " " + unit + "s ago");
+    
+    var days = getDaysBetween (before, after);
+    if (days == 0)
+        return "today";
+    if (days == 1)
+        return "yesterday";
+    if (days <= 3)
+        return format(days, "day");
+    
+    var weeks = getWeeksBetween  (before, after);
+    if (weeks == 0)
+        return "this week";
+    if (weeks == 1)
+        return "last week";
+    
+    var months = getMonthsBetween (before, after);
+    if (months == 0)
+        return "this month";
+    if (months == 1)
+        return  "last month";
+    if (months <= 6)
+        return  format(months, "month");
         
-        return weeks + " weeks ago";
+    var years = getYearsBetween  (before, after);
+    if (years == 0)
+        return "this year";
+    if (years == 1)
+        return "last year";
+
+    return  format(years, "year");        
 }
 
 var render = (json, template) => {
