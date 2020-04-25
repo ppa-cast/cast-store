@@ -4,6 +4,7 @@ var extensionsDirectory = {
     "com.castsoftware.datacolumnaccess"                           : "analysis",
     "com.castsoftware.deltatool"                                  : "analysis",
     "com.castsoftware.deltatooldoc"                               : "analysis",
+    "com.castsoftware.labs.3rdparty.csv.integration"              : "analysis",
     "com.castsoftware.labs.HF.System.out.println.blackboxes"      : "analysis",
     "com.castsoftware.labs.aep.dataentities"                      : "analysis",
     "com.castsoftware.labs.analysisconfigurationkit"              : "analysis",
@@ -85,7 +86,6 @@ var extensionsDirectory = {
 
     "com.castsoftware.cisq-index"                                 : "assessment",
     "com.castsoftware.greenit"                                    : "assessment",
-    "com.castsoftware.labs.3rdparty.csv.integration"              : "assessment",
     "com.castsoftware.labs.cloud"                                 : "assessment",
     "com.castsoftware.labs.digital-ready"                         : "assessment",
     "com.castsoftware.labs.green"                                 : "assessment",
