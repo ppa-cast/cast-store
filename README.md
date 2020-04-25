@@ -1,4 +1,5 @@
-This simple webapp is an alternative gallery for the [extendng.castsoftware.com](extendng.castsoftware.com) web site. Visit the demo site: [https://ppa-cast.github.io/cast-store/](https://ppa-cast.github.io/cast-store/)
+This simple webapp is an alternative gallery for the [extendng.castsoftware.com](extendng.castsoftware.com) web site. 
+Visit the demo site: [https://ppa-cast.github.io/cast-store/](https://ppa-cast.github.io/cast-store/)
 
 The extensions are distributed into 3 inboxes (New arrivals, Recently released, Recently upgraded), and into 8 categories:
 
