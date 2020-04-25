@@ -3,6 +3,7 @@
 <head>
 <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
 <script src="https://npmcdn.com/ejs@3.0.2/ejs.min.js"></script>
+<script src="extensions.js"></script>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-42547942-5"></script>
@@ -46,6 +47,7 @@ body { background-color: #eee;}
 <script>
 const oneDay = 24 * 60 * 60 * 1000; // hours*minutes*seconds*milliseconds
 const oneMonth = oneDay * 30;
+const oneWeek = oneDay * 7;
 
 var collect = (json) => {
     var extensions = {};
@@ -56,7 +58,6 @@ var collect = (json) => {
             extension = extensions[it.id] = {
                 id: it.id,
                 title: it.title,    
-                downloads: it.downloads,
                 type: it.type, 
                 createdOn: new Date(it.created),
                 analyzer: it.analyzer, 
@@ -66,13 +67,18 @@ var collect = (json) => {
 
         // Save some properties for the latest version only
         if (it.absoluteLatest) {
+            let downloads = extension.downloads = it.downloads;
             extension.version = it.version;
             extension.description = it.description;
-            extension.date = extension.publishedOn = new Date(it.published);
+            let date = extension.date = extension.publishedOn = new Date(it.published);
             extension.age = getDuration (extension.publishedOn, new Date());            
             extension.iconurl = it.iconurl;
             extension.versionType = it.versionType;
             extension.promoted = it.promoted;
+            extension.category = extensionsDirectory[it.id] || "unclassified";
+            let weeks = (new Date() - date) / oneWeek;  
+            extension.score = downloads / weeks; // average number of downloads per week    
+
         }
         
         // createdOn is the oldest date
@@ -134,16 +140,48 @@ var collect = (json) => {
          arr = arr.sort((it1, it2) => it2.date - it1.date);
         return arr; 
     }
+    
+    var promoted = () => {
+        var arr = Object.keys(extensions).reduce(
+            (acc, it) => {
+                var extension = extensions[it];    
+                if (extension.promoted)
+                    acc.push(extension);
+                return acc;
+            }, []);
+         arr = arr.sort((it1, it2) => it2.score - it1.score); // Ordered by score
+        return arr; 
+    }   
 
-    var recentExtensions = {
+    var category = (category) => {
+        var arr = Object.keys(extensions).reduce(
+            (acc, it) => {
+                var extension = extensions[it];    
+                if (extension.category === category)
+                    acc.push(extension);
+                return acc;
+            }, []);
+         arr = arr.sort((it1, it2) => it2.score - it1.score); // Ordered by score
+        return arr; 
+    }    
+    
+
+    var allExtensions = {
         added: addedLast30days(),
         upgraded: upgradedLast30days(),
         released: releasedLast30days(),
-        promoted: promoted()
+        promoted: promoted(),
+        platform: category('platform'),
+        technologies: category('technology'),
+        reporting: category('reporting'),
+        analysis: category('analysis'),
+        delivery: category('delivery'),        
+        assessment: category('assessment'),     
+        unclassified: category('unclassified')
     };
     
-    return recentExtensions;
-}
+    return allExtensions;
+}    
 
 // This script is released to the public domain and may be used, modified and
 // distributed without restrictions. Attribution not necessary but appreciated.
@@ -185,8 +223,8 @@ var getDuration = (before, after) => {
 
 var render = (json, template) => {
     $('#spinner').removeClass('spinner');
-    var recentExtensions = collect(json[0]);
-    var html = ejs.render(template[0], {recentExtensions: recentExtensions}, null);    
+    var allExtensions = collect(json[0]);
+    var html = ejs.render(template[0], allExtensions, null);    
     $('#output').html(html);
 }
 
