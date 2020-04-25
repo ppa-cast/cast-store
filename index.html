@@ -141,18 +141,6 @@ var collect = (json) => {
         return arr; 
     }
     
-    var promoted = () => {
-        var arr = Object.keys(extensions).reduce(
-            (acc, it) => {
-                var extension = extensions[it];    
-                if (extension.promoted)
-                    acc.push(extension);
-                return acc;
-            }, []);
-         arr = arr.sort((it1, it2) => it2.score - it1.score); // Ordered by score
-        return arr; 
-    }   
-
     var category = (category) => {
         var arr = Object.keys(extensions).reduce(
             (acc, it) => {
@@ -164,7 +152,6 @@ var collect = (json) => {
          arr = arr.sort((it1, it2) => it2.score - it1.score); // Ordered by score
         return arr; 
     }    
-    
 
     var allExtensions = {
         added: addedLast30days(),
