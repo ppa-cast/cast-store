@@ -4,6 +4,7 @@ var extensionsDirectory = {
     "com.castsoftware.labs.train.sdk.jee.qr"                      : "training",
     "com.castsoftware.labs.train.sdk.ua.batch"                    : "training",
 
+
     "com.castsoftware.labs.dataflow.extensions.collector"         : "dataflow",
     "com.castsoftware.labs.dataflow.for.apache.struts"            : "dataflow",
     "com.castsoftware.labs.dataflow.for.jsf"                      : "dataflow",
@@ -25,16 +26,16 @@ var extensionsDirectory = {
     "com.castsoftware.uc.serilog.blackboxes"                      : "dataflow",
     "com.castsoftware.uc.slf4j.blackboxes"                        : "dataflow",
 
+
     "com.castsoftware.automaticlinksvalidator"                    : "analysis",
     "com.castsoftware.awsjava"                                    : "analysis",
     "com.castsoftware.datacolumnaccess"                           : "analysis",
     "com.castsoftware.deltatool"                                  : "analysis",
-    "com.castsoftware.deltatooldoc"                               : "analysis",    
-    "com.castsoftware.labs.aep.dataentities"                      : "analysis",
+    "com.castsoftware.deltatooldoc"                               : "analysis",   
+    "com.castsoftware.labs.3rdparty.csv.integration"              : "analysis",
     "com.castsoftware.labs.analysisconfigurationkit"              : "analysis",
     "com.castsoftware.labs.cobol.swcopy.update"                   : "analysis",
     "com.castsoftware.labs.ctl.link"                              : "analysis",
-    "com.castsoftware.labs.deltareportanalysis"                   : "analysis",
     "com.castsoftware.labs.deltareportsnapshot"                   : "analysis",
     "com.castsoftware.labs.genericReflink"                        : "analysis",
     "com.castsoftware.labs.gorgondb"                              : "analysis",
@@ -84,7 +85,6 @@ var extensionsDirectory = {
     "com.castsoftware.uc.transactioncalibrationkit"               : "analysis",
     "com.castsoftware.wbslinker"                                  : "analysis",
     
-    
 
     "com.castsoftware.cisq-index"                                 : "assessment",
     "com.castsoftware.greenit"                                    : "assessment",
@@ -92,7 +92,6 @@ var extensionsDirectory = {
     "com.castsoftware.labs.digital-ready"                         : "assessment",
     "com.castsoftware.labs.green"                                 : "assessment",
     "com.castsoftware.labs.hai"                                   : "assessment",
-    "com.castsoftware.labs.mips-redux"                            : "assessment",
     "com.castsoftware.labs.slrex"                                 : "assessment",
     "com.castsoftware.labs.system-level.t-rules"                  : "assessment",    
     "com.castsoftware.mips-redux-index"                           : "assessment",
@@ -127,6 +126,7 @@ var extensionsDirectory = {
     
     "com.castsoftware.aip.datamart"                               : "reporting",
     "com.castsoftware.labs.templates.for.report.generator"        : "reporting",
+    "com.castsoftware.uc.aip2hl"                                  : "reporting",    
     "com.castsoftware.uc.ContinuousImprovementReport"             : "reporting",
     "com.castsoftware.uc.GenericReport"                           : "reporting",
     "com.castsoftware.uc.NewViolationsReport"                     : "reporting",
@@ -141,7 +141,6 @@ var extensionsDirectory = {
     "com.castsoftware.uc.restapi.excelreports"                    : "reporting",
     "com.castsoftware.uc.simulatorgenerator"                      : "reporting",
     "com.castsoftware.uc.violationextraction"                     : "reporting",
-    
     
     "com.castsoftware.JEE-MavenHttp"                              : "delivery",
     "com.castsoftware.aip.extractor.bo"                           : "delivery",
@@ -164,10 +163,10 @@ var extensionsDirectory = {
     "com.castsoftware.labs.tools.deliveryplugincleaner"           : "delivery",
     "com.castsoftware.uc.DMTExplore"                              : "delivery",
     "com.castsoftware.uc.DeliveryAlertsReport"                    : "delivery",
-    "com.castsoftware.uc.aip2hl"                                  : "delivery",
     "com.castsoftware.uc.castdeliverytrigger"                     : "delivery",
     "com.castsoftware.uc.dmtjeebeadiscoverer"                     : "delivery",
     "com.castsoftware.uc.endevor-extractor"                       : "delivery",
+    "com.castsoftware.uc.filesearcher"                            : "delivery",    
     "com.castsoftware.uc.mainframeconnector"                      : "delivery",
     "com.castsoftware.uc.rapiddiscoveryreport"                    : "delivery",
     "com.castsoftware.webfilesdiscoverer"                         : "delivery",
@@ -200,7 +199,6 @@ var extensionsDirectory = {
     "com.castsoftware.labs.TalendMetaDataAnalyzer"                : "technology",
     "com.castsoftware.labs.apache.kafka"                          : "technology",
     "com.castsoftware.labs.gosu"                                  : "technology",
-    "com.castsoftware.labs.shelllinkjava"                         : "technology",
     "com.castsoftware.labs.spring.integration"                    : "technology",
     "com.castsoftware.labs.system-level.xxshared"                 : "technology",
     "com.castsoftware.labs.zos.basesas"                           : "technology",
@@ -245,7 +243,6 @@ var extensionsDirectory = {
     "com.castsoftware.uc.datastage"                               : "technology",
     "com.castsoftware.uc.dotNetRules"                             : "technology",
     "com.castsoftware.uc.easytrieve"                              : "technology",
-    "com.castsoftware.uc.ibatis"                                  : "technology",
     "com.castsoftware.uc.imsdc"                                   : "technology",
     "com.castsoftware.uc.informix.db"                             : "technology",
     "com.castsoftware.uc.informix4gl"                             : "technology",
@@ -255,7 +252,6 @@ var extensionsDirectory = {
     "com.castsoftware.uc.jboss.drools"                            : "technology",
     "com.castsoftware.uc.liferay"                                 : "technology",
     "com.castsoftware.uc.natural.adabas"                          : "technology",
-    "com.castsoftware.uc.oraclebpel"                              : "technology",
     "com.castsoftware.uc.pacbase"                                 : "technology",
     "com.castsoftware.uc.peoplesoft.security"                     : "technology",
     "com.castsoftware.uc.php.doctrine"                            : "technology",
@@ -277,15 +273,23 @@ var extensionsDirectory = {
     "com.castsoftware.wcf"                                        : "technology",
     "com.castsoftware.wpf"                                        : "technology",
 
-    "com.castsoftware.labs.aep.transactions"                      : "unclassified",
+
     "com.castsoftware.labs.db2.manifest.to.ddl"                   : "unclassified",
-    "com.castsoftware.labs.deltareportdocsnapshot"                : "unclassified",
     "com.castsoftware.labs.jcl.to.shell"                          : "unclassified",
     "com.castsoftware.labs.jee.EclipseLinkJPA"                    : "unclassified",
-    "com.castsoftware.labs.shelllinkperl"                         : "unclassified",
-    "com.castsoftware.labs.transactionconfigurationkit"           : "unclassified",    
-    "com.castsoftware.uc.bpel"                                    : "unclassified",
-    "com.castsoftware.uc.filesearcher"                            : "unclassified",
     "com.castsoftware.uc.imagingeligibilitytool"                  : "unclassified",
     "com.castsoftware.uc.microsoft.practices.prism"               : "unclassified",
+
+
+    "com.castsoftware.labs.deltareportdocsnapshot"                : "deprecated",
+    "com.castsoftware.labs.aep.dataentities"                      : "deprecated",
+    "com.castsoftware.uc.oraclebpel"                              : "deprecated",
+    "com.castsoftware.labs.shelllinkjava"                         : "deprecated",
+    "com.castsoftware.uc.ibatis"                                  : "deprecated",
+    "com.castsoftware.labs.mips-redux"                            : "deprecated",
+    "com.castsoftware.labs.aep.transactions"                      : "deprecated",
+    "com.castsoftware.labs.shelllinkperl"                         : "deprecated",
+    "com.castsoftware.labs.transactionconfigurationkit"           : "deprecated",        
+    "com.castsoftware.labs.deltareportanalysis"                   : "deprecated",
+    "com.castsoftware.uc.bpel"                                    : "deprecated",    
 }

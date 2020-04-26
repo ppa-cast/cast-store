@@ -57,7 +57,6 @@ var collect = (json) => {
         if (! extension) {
             extension = extensions[it.id] = {
                 id: it.id,
-                title: it.title,    
                 type: it.type, 
                 createdOn: new Date(it.published), // do not use it.created, this is an odd date
                 analyzer: it.analyzer, 
@@ -67,6 +66,7 @@ var collect = (json) => {
          
         // Save some properties for the latest version only
         if (it.absoluteLatest) {
+            extension.title = it.title;
             let downloads = extension.downloads = it.downloads;
             extension.version = it.version;
             extension.description = it.description;
