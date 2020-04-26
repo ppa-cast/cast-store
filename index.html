@@ -81,8 +81,8 @@ var collect = (json) => {
         // createdOn is the oldest date, it.downloads is the total download
         if (it.published && extension.createdOn >= new Date(it.published)) {
             extension.createdOn = new Date(it.published);
-            let weeks = (new Date() - extension.createdOn) / oneWeek;  
-            extension.score = it.downloads / weeks; // average number of downloads per week    
+            let months = Math.round(getDaysBetween(extension.createdOn, new Date()) / 30) || 1;  
+            extension.score = Math.round(it.downloads / months); // average number of downloads per week    
         }
     });
 
@@ -163,7 +163,9 @@ var collect = (json) => {
         analysis: category('analysis'),
         delivery: category('delivery'),        
         assessment: category('assessment'),     
-        unclassified: category('unclassified')
+        unclassified: category('unclassified'),
+        training: category('training'),
+        dataflow: category('dataflow')        
     };
     
     return allExtensions;
