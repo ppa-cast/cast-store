@@ -139,9 +139,14 @@ img {
 
 <%
 var renderTile = (ext, idx, cls) => { 
+    let tooltip;
+    if (ext.score === ext.downloads)
+       tooltip = ext.downloads + " total downloads";
+    else
+       tooltip = ext.score + " monthly downloads&#10;" + ext.downloads+ " total downloads";       
     %>
     <span <%=idx > 6 ? ('class=' + cls +  ' style=display:none;') : ''%>>
-        <div title="<%=ext.score%> monthly downloads&#10;<%=ext.downloads%> total downloads&#10;since <%=ext.createdOn.toString().substr(4,11)%>" style="display: inline-block;padding-top:10px"> 
+        <div title="<%-tooltip%>&#10;since <%=ext.createdOn.toString().substr(4,11)%>" style="display: inline-block;padding-top:10px"> 
             <a style="text-decoration: none;color:inherit;" href="https://extendng.castsoftware.com/#/extension?id=<%=ext.id%>&version=<%=ext.version%>">
                 <div class="tile">
                     <div style="width:92px;height:92px;margin-left:auto;margin-right:auto;">
