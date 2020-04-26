@@ -10,6 +10,7 @@ The extensions are distributed into 3 inboxes (New arrivals, Recently released, 
 - for categories, the extensions are ordered by monthly downloads.
 
 The mapping of extensions to categories is defined here: [extensions.js](extensions.js)
+
 Deprecated extensions are classified as "deprecated" and are not displayed.
 
 This webapp has been developped with [jQuery](https://jquery.com/), [Embedded JavaScript templates](https://www.npmjs.com/package/ejs), and the [extendng.castsoftware.com API](https://extendng.castsoftware.com/api/doc).
