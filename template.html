@@ -141,9 +141,9 @@ img {
 var renderTile = (ext, idx, cls) => { 
     let tooltip;
     if (ext.score === ext.downloads)
-       tooltip = ext.downloads + " total downloads";
+       tooltip = ext.downloads + " downloads";
     else
-       tooltip = ext.score + " monthly downloads&#10;" + ext.downloads+ " total downloads";       
+       tooltip = ext.score + " monthly downloads&#10;" + ext.downloads+ " downloads";       
     %>
     <span <%=idx > 6 ? ('class=' + cls +  ' style=display:none;') : ''%>>
         <div title="<%-tooltip%>&#10;since <%=ext.createdOn.toString().substr(4,11)%>" style="display: inline-block;padding-top:10px"> 
