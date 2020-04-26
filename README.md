@@ -3,7 +3,7 @@ It aims to give a better visibility of the published extensions.
 
 Visit the demo site: [https://ppa-cast.github.io/cast-store/](https://ppa-cast.github.io/cast-store/)
 
-The extensions are distributed into 3 inboxes (New arrivals, Recently released, Recently upgraded), and into categories:
+The extensions are distributed into 3 inboxes (New arrivals, Recent releases, Recent upgrades), and into categories:
 
 - for inboxes, the extensions are ordered by publication date,
 
