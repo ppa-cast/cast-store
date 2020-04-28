@@ -197,7 +197,7 @@ renderTiles('Analysis helpers', 'Utilities for a better analysis support', analy
 renderTiles('Security analysis', 'Utilities and blackboxes for dataflow based analysis', dataflow, 'moreDataflow');
 renderTiles('Delivery', 'Delivery Manager Tool plugins and utilities', delivery, 'moreDelivery');
 renderTiles('Training', 'Training materials', training, 'moreTraining');
-renderTiles('Not yet classified', 'Extensions which must be reviewed for classification', unclassified, 'moreUnclassified');
+if (unclassified.length) renderTiles('Not yet classified', 'Extensions which must be reviewed for classification', unclassified, 'moreUnclassified');
 
 %>
 
