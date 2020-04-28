@@ -274,12 +274,12 @@ var extensionsDirectory = {
     "com.castsoftware.wpf"                                        : "technology",
 
 
-    "com.castsoftware.labs.db2.manifest.to.ddl"                   : "unclassified",
-    "com.castsoftware.labs.jcl.to.shell"                          : "unclassified",
-    "com.castsoftware.labs.jee.EclipseLinkJPA"                    : "unclassified",
-    "com.castsoftware.uc.imagingeligibilitytool"                  : "unclassified",
-    "com.castsoftware.uc.microsoft.practices.prism"               : "unclassified",
-
+    "com.castsoftware.labs.db2.manifest.to.ddl"                   : "analysis",
+    "com.castsoftware.labs.jcl.to.shell"                          : "analysis",
+    "com.castsoftware.labs.jee.EclipseLinkJPA"                    : "analysis",
+    "com.castsoftware.uc.imagingeligibilitytool"                  : "analysis",
+    "com.castsoftware.uc.microsoft.practices.prism"               : "analysis",
+    "com.castsoftware.java.service"                               : "analysis",
 
     "com.castsoftware.labs.deltareportdocsnapshot"                : "deprecated",
     "com.castsoftware.labs.aep.dataentities"                      : "deprecated",
