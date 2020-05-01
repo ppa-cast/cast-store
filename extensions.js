@@ -105,6 +105,7 @@ var extensionsDirectory = {
     
     
     "com.castsoftware.aip"                                        : "platform",
+    "com.castsoftware.aipsecurity"                                : "platform",
     "com.castsoftware.aip.archichecker"                           : "platform",
     "com.castsoftware.aip.console"                                : "platform",
     "com.castsoftware.aip.console.tools"                          : "platform",
