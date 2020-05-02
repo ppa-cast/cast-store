@@ -157,16 +157,12 @@ var collect = (json) => {
         upgraded: upgradedLast30days(),
         released: releasedLast30days(),
         promoted: promoted(),
-        platform: category('platform'),
-        technologies: category('technology'),
-        reporting: category('reporting'),
-        analysis: category('analysis'),
-        delivery: category('delivery'),        
-        assessment: category('assessment'),     
-        unclassified: category('unclassified'),
-        training: category('training'),
-        dataflow: category('dataflow')        
+        unclassified: [],
+        customCategories: {},
     };
+
+    // Add custom categories (see extensions.js)
+    Object.keys(categories).forEach ((it) => allExtensions.customCategories[it] = category(it));
     
     return allExtensions;
 }    

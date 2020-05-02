@@ -1,3 +1,38 @@
+var categories = {
+    'platform': {
+        title: 'AIP features',
+        description: 'Platform applications & components'
+    },
+    'technology': {
+        title: 'Technologies & Frameworks',
+        description: 'Extend the scope of Technologies & Frameworks'
+    },
+    'assessment': {
+        title: 'Assessment model',
+        description: 'Extend the assessment model with additional quality indicators and metrics'
+    },
+    'reporting': {
+        title: 'Reporting',
+        description: 'Extend the reporting capabilities of the platform'
+    },
+    'analysis': {
+        title: 'Analysis helpers',
+        description: 'Utilities for a better analysis support'
+    },
+    'dataflow': {
+        title: 'Security analysis',
+        description: 'Utilities and blackboxes for dataflow based analysis'
+    },
+    'delivery': {
+        title: 'Delivery',
+        description: 'Delivery Manager Tool plugins and utilities'
+    },
+    'training': {
+        title: 'Training',
+        description: 'Examples to create custom quality rules with the Python SDK and the Metrics Compiler'
+    },
+}; 
+
 var extensionsDirectory = {
     "com.castsoftware.labs.train.sdk.cpp.diags"                   : "training",
     "com.castsoftware.labs.train.sdk.diags"                       : "training",

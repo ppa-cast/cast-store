@@ -189,14 +189,10 @@ renderTiles('Recent releases', 'Funcrel/LTS releases within the last 30 days (on
 renderTiles('Recent upgrades', 'Upgrades within the last 30 days (only latest versions are reported)', upgraded, 'moreUpgraded');
 renderTiles('Our selection', 'Promoted extensions by CAST', promoted, 'morePromoted');
 
-renderTiles('AIP features', 'Platform applications & components', platform, 'morePlatform');
-renderTiles('Technologies & Frameworks', 'Extend the scope of Technologies & Frameworks', technologies, 'moreTechnologies');
-renderTiles('Assessment model', 'Extend the assessment model with additional quality indicators and metrics', assessment, 'moreAssessment');
-renderTiles('Reporting', 'Extend the reporting capabilities of the platform', reporting, 'moreReporting');
-renderTiles('Analysis helpers', 'Utilities for a better analysis support', analysis, 'moreAnalysis');
-renderTiles('Security analysis', 'Utilities and blackboxes for dataflow based analysis', dataflow, 'moreDataflow');
-renderTiles('Delivery', 'Delivery Manager Tool plugins and utilities', delivery, 'moreDelivery');
-renderTiles('Training', 'Examples to create custom quality rules with the Python SDK and the Metrics Compiler', training, 'moreTraining');
+Object.keys(customCategories).forEach( (it) => {
+   renderTiles(categories[it].title, categories[it].description, customCategories[it], 'more' + it);
+})   
+
 if (unclassified.length) renderTiles('Not yet classified', 'Extensions which must be reviewed for classification', unclassified, 'moreUnclassified');
 
 %>
