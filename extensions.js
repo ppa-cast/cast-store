@@ -8,9 +8,13 @@ var categories = {
         description: 'Extend the scope of Technologies & Frameworks'
     },
     'assessment': {
-        title: 'Assessment model',
-        description: 'Extend the assessment model with additional quality indicators and metrics'
+        title: 'Assessment models',
+        description: 'Extend the assessment model with additional indexes'
     },
+    'rules': {
+        title: 'More rules',
+        description: 'Extend the assessment model with technologies specific rules and metrics'
+    },    
     'reporting': {
         title: 'Reporting',
         description: 'Extend the reporting capabilities of the platform'
@@ -126,18 +130,25 @@ var extensionsDirectory = {
     "com.castsoftware.labs.green"                                 : "assessment",
     "com.castsoftware.labs.hai"                                   : "assessment",
     "com.castsoftware.labs.slrex"                                 : "assessment",
-    "com.castsoftware.labs.system-level.t-rules"                  : "assessment",    
     "com.castsoftware.mips-redux-index"                           : "assessment",
     "com.castsoftware.omg-ascqm-index"                            : "assessment",
     "com.castsoftware.omg-atdm"                                   : "assessment",
     "com.castsoftware.owasp-index"                                : "assessment",
     "com.castsoftware.qualitystandards"                           : "assessment",
-    "com.castsoftware.systemlevelrules"                           : "assessment",
-    "com.castsoftware.uc.architecturecheckerruleKit"              : "assessment",    
-    "com.castsoftware.uc.cwe4fda"                                 : "assessment",
-    "com.castsoftware.uc.jee.qr.infinite.loops"                   : "assessment",
-    "com.castsoftware.uc.peoplesoft.delta.size"                   : "assessment",
     
+    "com.castsoftware.uc.security.custom.rules"                   : "rules",
+    "com.castsoftware.uc.cwe"                                     : "rules",
+    "com.castsoftware.uc.spdb.cpecqr"                             : "rules",
+    "com.castsoftware.uc.COMCloudRule"                            : "rules",
+    "com.castsoftware.uc.pl1.custom.rules"                        : "rules",    
+    "com.castsoftware.uc.peoplesoft.security"                     : "rules",
+    "com.castsoftware.uc.peoplesoft.delta.size"                   : "rules",
+    "com.castsoftware.uc.cwe4fda"                                 : "rules",    
+    "com.castsoftware.uc.dotNetRules"                             : "rules",
+    "com.castsoftware.uc.jee.qr.infinite.loops"                   : "rules",    
+    "com.castsoftware.systemlevelrules"                           : "rules",
+    "com.castsoftware.uc.architecturecheckerruleKit"              : "rules",    
+    "com.castsoftware.labs.system-level.t-rules"                  : "rules", 
     
     "com.castsoftware.aip"                                        : "platform",
     "com.castsoftware.aipsecurity"                                : "platform",
@@ -264,7 +275,6 @@ var extensionsDirectory = {
     "com.castsoftware.swift"                                      : "technology",
     "com.castsoftware.tibco"                                      : "technology",
     "com.castsoftware.typescript"                                 : "technology",
-    "com.castsoftware.uc.COMCloudRule"                            : "technology",
     "com.castsoftware.uc.ColdFusion"                              : "technology",
     "com.castsoftware.uc.Perl"                                    : "technology",
     "com.castsoftware.uc.Progress"                                : "technology",
@@ -275,9 +285,7 @@ var extensionsDirectory = {
     "com.castsoftware.uc.ca7"                                     : "technology",
     "com.castsoftware.uc.caideal"                                 : "technology",
     "com.castsoftware.uc.cognos"                                  : "technology",
-    "com.castsoftware.uc.cwe"                                     : "technology",
     "com.castsoftware.uc.datastage"                               : "technology",
-    "com.castsoftware.uc.dotNetRules"                             : "technology",
     "com.castsoftware.uc.easytrieve"                              : "technology",
     "com.castsoftware.uc.imsdc"                                   : "technology",
     "com.castsoftware.uc.informix.db"                             : "technology",
@@ -289,15 +297,11 @@ var extensionsDirectory = {
     "com.castsoftware.uc.liferay"                                 : "technology",
     "com.castsoftware.uc.natural.adabas"                          : "technology",
     "com.castsoftware.uc.pacbase"                                 : "technology",
-    "com.castsoftware.uc.peoplesoft.security"                     : "technology",
     "com.castsoftware.uc.php.doctrine"                            : "technology",
-    "com.castsoftware.uc.pl1.custom.rules"                        : "technology",
     "com.castsoftware.uc.powercenter"                             : "technology",
     "com.castsoftware.uc.rdl"                                     : "technology",
     "com.castsoftware.uc.remedy.ars"                              : "technology",
     "com.castsoftware.uc.resteasy"                                : "technology",
-    "com.castsoftware.uc.security.custom.rules"                   : "technology",
-    "com.castsoftware.uc.spdb.cpecqr"                             : "technology",
     "com.castsoftware.uc.springbatch"                             : "technology",
     "com.castsoftware.uc.springwebflow"                           : "technology",
     "com.castsoftware.uc.sqr"                                     : "technology",
@@ -316,6 +320,7 @@ var extensionsDirectory = {
     "com.castsoftware.uc.imagingeligibilitytool"                  : "analysis",
     "com.castsoftware.uc.microsoft.practices.prism"               : "analysis",
     "com.castsoftware.java.service"                               : "analysis",
+    
 
     "com.castsoftware.labs.deltareportdocsnapshot"                : "deprecated",
     "com.castsoftware.labs.aep.dataentities"                      : "deprecated",
@@ -329,3 +334,5 @@ var extensionsDirectory = {
     "com.castsoftware.labs.deltareportanalysis"                   : "deprecated",
     "com.castsoftware.uc.bpel"                                    : "deprecated",    
 }
+
+
