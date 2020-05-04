@@ -64,6 +64,7 @@ var extensionsDirectory = {
     "com.castsoftware.uc.sendcredentials.blackboxes"              : "dataflow",
     "com.castsoftware.uc.serilog.blackboxes"                      : "dataflow",
     "com.castsoftware.uc.slf4j.blackboxes"                        : "dataflow",
+    "com.castsoftware.securityforjava"                            : "dataflow",    
 
 
     "com.castsoftware.automaticlinksvalidator"                    : "analysis",
@@ -261,7 +262,6 @@ var extensionsDirectory = {
     "com.castsoftware.rpg"                                        : "technology",
     "com.castsoftware.sap.hybris"                                 : "technology",
     "com.castsoftware.sapui5"                                     : "technology",
-    "com.castsoftware.securityforjava"                            : "technology",
     "com.castsoftware.shell"                                      : "technology",
     "com.castsoftware.siebel"                                     : "technology",
     "com.castsoftware.silverlight"                                : "technology",
