@@ -86,7 +86,6 @@ var extensionsDirectory = {
     "com.castsoftware.labs.tools.environmentprofilemigrator"      : "analysis",
     "com.castsoftware.labs.tools.externalmarker"                  : "analysis",
     "com.castsoftware.labs.tools.pathbasedmodulegenerator"        : "analysis",
-    "com.castsoftware.labs.tools.versionorganizer"                : "analysis",
     "com.castsoftware.labs.transactioncompletenesskit"            : "analysis",
     "com.castsoftware.uc.AnalysisCompletenessReport"              : "analysis",
     "com.castsoftware.uc.AppBoundariesEntry-EndPoints"            : "analysis",
@@ -149,6 +148,7 @@ var extensionsDirectory = {
     "com.castsoftware.systemlevelrules"                           : "rules",
     "com.castsoftware.uc.architecturecheckerruleKit"              : "rules",    
     "com.castsoftware.labs.system-level.t-rules"                  : "rules", 
+    "com.castsoftware.labs.system-level.xxshared"                 : "rules",    
     
     "com.castsoftware.aip"                                        : "platform",
     "com.castsoftware.aipsecurity"                                : "platform",
@@ -217,6 +217,7 @@ var extensionsDirectory = {
     "com.castsoftware.uc.mainframeconnector"                      : "delivery",
     "com.castsoftware.uc.rapiddiscoveryreport"                    : "delivery",
     "com.castsoftware.webfilesdiscoverer"                         : "delivery",
+    "com.castsoftware.labs.tools.versionorganizer"                : "delivery",    
     
     
 
@@ -247,7 +248,6 @@ var extensionsDirectory = {
     "com.castsoftware.labs.apache.kafka"                          : "technology",
     "com.castsoftware.labs.gosu"                                  : "technology",
     "com.castsoftware.labs.spring.integration"                    : "technology",
-    "com.castsoftware.labs.system-level.xxshared"                 : "technology",
     "com.castsoftware.labs.zos.basesas"                           : "technology",
     "com.castsoftware.mqe"                                        : "technology",
     "com.castsoftware.nodejs"                                     : "technology",
