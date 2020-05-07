@@ -157,7 +157,7 @@ var collect = (json) => {
         upgraded: upgradedLast30days(),
         released: releasedLast30days(),
         promoted: promoted(),
-        unclassified: [],
+        unclassified: category('unclassified'),
         customCategories: {},
     };
 
