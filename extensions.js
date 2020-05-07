@@ -168,6 +168,7 @@ var extensionsDirectory = {
     "com.castsoftware.uc.aip.console.tools"                       : "platform",
     "com.castsoftware.uc.castSLA"                                 : "platform",
     "com.castsoftware.xset"                                       : "platform",
+    "com.castsoftware.css"                                        : "platform",
     
     
     "com.castsoftware.aip.datamart"                               : "reporting",
@@ -219,7 +220,7 @@ var extensionsDirectory = {
     "com.castsoftware.uc.rapiddiscoveryreport"                    : "delivery",
     "com.castsoftware.webfilesdiscoverer"                         : "delivery",
     "com.castsoftware.labs.tools.versionorganizer"                : "delivery",    
-    
+    "com.castsoftware.labs.tools.alertignorelistbuilder"          : "delivery", 
     
 
     "com.castsoftware.android"                                    : "technology",
