@@ -13,6 +13,6 @@ The mapping of extensions to categories is defined here: [extensions.js](extensi
 
 Deprecated extensions are classified as "deprecated" and are not displayed.
 
-This webapp has been developped with [jQuery](https://jquery.com/), [Embedded JavaScript templates](https://www.npmjs.com/package/ejs), and the [extendng.castsoftware.com API](https://extendng.castsoftware.com/api/doc).
+This webapp has been developed with [jQuery](https://jquery.com/), [Embedded JavaScript templates](https://www.npmjs.com/package/ejs), and the [extendng.castsoftware.com API](https://extendng.castsoftware.com/api/doc).
 
 
