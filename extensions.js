@@ -221,8 +221,8 @@ var extensionsDirectory = {
     "com.castsoftware.webfilesdiscoverer"                         : "delivery",
     "com.castsoftware.labs.tools.versionorganizer"                : "delivery",    
     "com.castsoftware.labs.tools.alertignorelistbuilder"          : "delivery", 
+    "com.castsoftware.labs.tools.repositorycredentialsupdater"    : "delivery", 
     
-
     "com.castsoftware.android"                                    : "technology",
     "com.castsoftware.angularjs"                                  : "technology",
     "com.castsoftware.asp"                                        : "technology",
