@@ -161,6 +161,7 @@ var extensionsDirectory = {
     "com.castsoftware.aip.dashboard.health"                       : "platform",
     "com.castsoftware.aip.dashboard.security"                     : "platform",
     "com.castsoftware.aip.extendservice"                          : "platform",
+    "com.castsoftware.aip.extendcli"                              : "platform",
     "com.castsoftware.aip.reportgenerator"                        : "platform",
     "com.castsoftware.aip.reportgeneratorfordashboard"            : "platform",
     "com.castsoftware.imaging"                                    : "platform",
