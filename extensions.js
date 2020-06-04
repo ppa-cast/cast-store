@@ -65,6 +65,7 @@ var extensionsDirectory = {
     "com.castsoftware.uc.serilog.blackboxes"                      : "dataflow",
     "com.castsoftware.uc.slf4j.blackboxes"                        : "dataflow",
     "com.castsoftware.securityforjava"                            : "dataflow",    
+    "com.castsoftware.uc.gwt.blackboxes"                          : "dataflow",
 
 
     "com.castsoftware.automaticlinksvalidator"                    : "analysis",
