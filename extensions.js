@@ -171,6 +171,7 @@ var extensionsDirectory = {
     "com.castsoftware.uc.castSLA"                                 : "platform",
     "com.castsoftware.xset"                                       : "platform",
     "com.castsoftware.css"                                        : "platform",
+    "com.castsoftware.imaging.linux"                              : "platform",
     
     
     "com.castsoftware.aip.datamart"                               : "reporting",
