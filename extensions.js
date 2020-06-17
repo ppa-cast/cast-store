@@ -173,7 +173,8 @@ var extensionsDirectory = {
     "com.castsoftware.css"                                        : "platform",
     "com.castsoftware.imaging.linux"                              : "platform",
     "com.castsoftware.aip.architecturelibrary"                    : "platform",
-    
+    "com.castsoftware.aip.dashboard.restapi"                      : "platform",
+    "com.castsoftware.aip.metrics-documentation"                  : "platform",
     
     "com.castsoftware.aip.datamart"                               : "reporting",
     "com.castsoftware.labs.templates.for.report.generator"        : "reporting",
@@ -317,6 +318,7 @@ var extensionsDirectory = {
     "com.castsoftware.vuejs"                                      : "technology",
     "com.castsoftware.wcf"                                        : "technology",
     "com.castsoftware.wpf"                                        : "technology",
+    "com.castsoftware.uc.fusionframework"                         : "technology",
 
 
     "com.castsoftware.labs.db2.manifest.to.ddl"                   : "analysis",
