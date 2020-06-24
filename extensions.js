@@ -319,6 +319,7 @@ var extensionsDirectory = {
     "com.castsoftware.wcf"                                        : "technology",
     "com.castsoftware.wpf"                                        : "technology",
     "com.castsoftware.uc.fusionframework"                         : "technology",
+    "com.castsoftware.labs.eagle"                                 : "technology",
 
 
     "com.castsoftware.labs.db2.manifest.to.ddl"                   : "analysis",
