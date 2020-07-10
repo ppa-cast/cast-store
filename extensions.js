@@ -202,6 +202,7 @@ var extensionsDirectory = {
     "com.castsoftware.dmtboextractiondiscoverer"                  : "delivery",
     "com.castsoftware.dmtcfilediscoverer"                         : "delivery",
     "com.castsoftware.dmtcppcompilationdatabasediscoverer"        : "delivery",
+    "com.castsoftware.dmtdotnetnugetresourcesextractor"           : "delivery",  
     "com.castsoftware.dmtcvsextractor"                            : "delivery",
     "com.castsoftware.dmtgitextractor"                            : "delivery",
     "com.castsoftware.dmtjeefilediscoverer"                       : "delivery",
