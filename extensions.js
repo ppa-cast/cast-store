@@ -229,6 +229,7 @@ var extensionsDirectory = {
     "com.castsoftware.labs.tools.alertignorelistbuilder"          : "delivery", 
     "com.castsoftware.labs.tools.repositorycredentialsupdater"    : "delivery", 
     "com.castsoftware.aip.extractor.sqldatabase"                  : "delivery", 
+    "com.castsoftware.aip.extractor.forms"                        : "delivery", 
     
     "com.castsoftware.android"                                    : "technology",
     "com.castsoftware.angularjs"                                  : "technology",
