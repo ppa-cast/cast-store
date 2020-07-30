@@ -228,6 +228,7 @@ var extensionsDirectory = {
     "com.castsoftware.labs.tools.versionorganizer"                : "delivery",    
     "com.castsoftware.labs.tools.alertignorelistbuilder"          : "delivery", 
     "com.castsoftware.labs.tools.repositorycredentialsupdater"    : "delivery", 
+    "com.castsoftware.aip.extractor.sqldatabase"                  : "delivery", 
     
     "com.castsoftware.android"                                    : "technology",
     "com.castsoftware.angularjs"                                  : "technology",
