@@ -122,7 +122,7 @@ var extensionsDirectory = {
     "com.castsoftware.uc.telon"                                   : "analysis",
     "com.castsoftware.uc.transactioncalibrationkit"               : "analysis",
     "com.castsoftware.wbslinker"                                  : "analysis",
-    
+    "com.castsoftware.mainframe"                                  : "analysis",
 
     "com.castsoftware.cisq-index"                                 : "assessment",
     "com.castsoftware.greenit"                                    : "assessment",
