@@ -123,6 +123,7 @@ var extensionsDirectory = {
     "com.castsoftware.uc.transactioncalibrationkit"               : "analysis",
     "com.castsoftware.wbslinker"                                  : "analysis",
     "com.castsoftware.mainframe"                                  : "analysis",
+    "com.castsoftware.uc.salesservice"                            : "analysis",
 
     "com.castsoftware.cisq-index"                                 : "assessment",
     "com.castsoftware.greenit"                                    : "assessment",
