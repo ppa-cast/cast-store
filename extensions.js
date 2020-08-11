@@ -151,6 +151,7 @@ var extensionsDirectory = {
     "com.castsoftware.uc.architecturecheckerruleKit"              : "rules",    
     "com.castsoftware.labs.system-level.t-rules"                  : "rules", 
     "com.castsoftware.labs.system-level.xxshared"                 : "rules",    
+    "com.castsoftware.uc.stratus.vos.cobol.qr"                    : "rules",   
     
     "com.castsoftware.aip"                                        : "platform",
     "com.castsoftware.aipsecurity"                                : "platform",
