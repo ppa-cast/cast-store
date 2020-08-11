@@ -177,6 +177,7 @@ var extensionsDirectory = {
     "com.castsoftware.aip.architecturelibrary"                    : "platform",
     "com.castsoftware.aip.dashboard.restapi"                      : "platform",
     "com.castsoftware.aip.metrics-documentation"                  : "platform",
+    "com.castsoftware.webinstaller"                               : "platform",
     
     "com.castsoftware.aip.datamart"                               : "reporting",
     "com.castsoftware.labs.templates.for.report.generator"        : "reporting",
