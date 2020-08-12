@@ -233,6 +233,7 @@ var extensionsDirectory = {
     "com.castsoftware.labs.tools.repositorycredentialsupdater"    : "delivery", 
     "com.castsoftware.aip.extractor.sqldatabase"                  : "delivery", 
     "com.castsoftware.aip.extractor.forms"                        : "delivery", 
+    "com.castsoftware.aip.console.delivery.folder.migration.tool" : "delivery", 
     
     "com.castsoftware.android"                                    : "technology",
     "com.castsoftware.angularjs"                                  : "technology",
