@@ -67,9 +67,12 @@ var extensionsDirectory = {
     "com.castsoftware.securityforjava"                            : "dataflow",    
     "com.castsoftware.uc.gwt.blackboxes"                          : "dataflow",
     "com.castsoftware.uc.net.platform.extensions.blackboxes"      : "dataflow",
+    "com.castsoftware.uc.jooq.blackboxes"                         : "dataflow",
+    "com.castsoftware.uc.dapper.orm.blackboxes"                   : "dataflow",
+    "com.castsoftware.uc.google.cloud.storage.blackboxes"         : "dataflow",
+    "com.castsoftware.uc.npgsql.blackboxes"                       : "dataflow",
+    "com.castsoftware.uc.oracle.odp.blackboxes"                   : "dataflow",
     
-
-
     "com.castsoftware.automaticlinksvalidator"                    : "analysis",
     "com.castsoftware.awsjava"                                    : "analysis",
     "com.castsoftware.datacolumnaccess"                           : "analysis",
