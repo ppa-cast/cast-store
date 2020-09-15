@@ -203,6 +203,7 @@ var extensionsDirectory = {
     "com.castsoftware.uc.restapi.excelreports"                    : "reporting",
     "com.castsoftware.uc.simulatorgenerator"                      : "reporting",
     "com.castsoftware.uc.violationextraction"                     : "reporting",
+    "com.castsoftware.labs.mips.report"                           : "reporting",
     
     "com.castsoftware.labs.mainframe.missing.sources"             : "delivery",    
     "com.castsoftware.uc.checkanalysiscompleteness"               : "delivery",    
