@@ -184,6 +184,7 @@ var extensionsDirectory = {
     "com.castsoftware.aip.metrics-documentation"                  : "platform",
     "com.castsoftware.webinstaller"                               : "platform",
     "com.castsoftware.uc.azureintegration"                        : "platform",
+    "com.castsoftware.sherlock"                                   : "platform",
     
     "com.castsoftware.aip.datamart"                               : "reporting",
     "com.castsoftware.labs.templates.for.report.generator"        : "reporting",
