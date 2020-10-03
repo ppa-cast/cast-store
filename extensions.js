@@ -72,6 +72,7 @@ var extensionsDirectory = {
     "com.castsoftware.uc.google.cloud.storage.blackboxes"         : "dataflow",
     "com.castsoftware.uc.npgsql.blackboxes"                       : "dataflow",
     "com.castsoftware.uc.oracle.odp.blackboxes"                   : "dataflow",
+    "com.castsoftware.labs.owasp.java.html.sanitizer"             : "dataflow",
     
     "com.castsoftware.automaticlinksvalidator"                    : "analysis",
     "com.castsoftware.awsjava"                                    : "analysis",
@@ -185,6 +186,7 @@ var extensionsDirectory = {
     "com.castsoftware.webinstaller"                               : "platform",
     "com.castsoftware.uc.azureintegration"                        : "platform",
     "com.castsoftware.sherlock"                                   : "platform",
+    "com.castsoftware.imaging.etl"                                : "platform",
     
     "com.castsoftware.aip.datamart"                               : "reporting",
     "com.castsoftware.labs.templates.for.report.generator"        : "reporting",
@@ -335,6 +337,9 @@ var extensionsDirectory = {
     "com.castsoftware.wpf"                                        : "technology",
     "com.castsoftware.uc.fusionframework"                         : "technology",
     "com.castsoftware.labs.eagle88"                               : "technology",
+    "com.castsoftware.grpcjava"                                   : "technology",
+    "com.castsoftware.uc.stripes"                                 : "technology",
+    "com.castsoftware.labs.idms.db"                               : "technology",
 
 
     "com.castsoftware.labs.db2.manifest.to.ddl"                   : "analysis",
