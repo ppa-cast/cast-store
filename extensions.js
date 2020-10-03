@@ -130,6 +130,7 @@ var extensionsDirectory = {
     "com.castsoftware.wbslinker"                                  : "analysis",
     "com.castsoftware.mainframe"                                  : "analysis",
     "com.castsoftware.uc.salesservice"                            : "analysis",
+    "com.castsoftware.uc.cpp.env.profile.generator"               : "analysis",
 
     "com.castsoftware.cisq-index"                                 : "assessment",
     "com.castsoftware.greenit"                                    : "assessment",
