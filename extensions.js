@@ -128,9 +128,9 @@ var extensionsDirectory = {
     "com.castsoftware.uc.telon"                                   : "analysis",
     "com.castsoftware.uc.transactioncalibrationkit"               : "analysis",
     "com.castsoftware.wbslinker"                                  : "analysis",
-    "com.castsoftware.mainframe"                                  : "analysis",
     "com.castsoftware.uc.salesservice"                            : "analysis",
     "com.castsoftware.uc.cpp.env.profile.generator"               : "analysis",
+    "com.castsoftware.uc.generic.queue"                           : "analysis",
 
     "com.castsoftware.cisq-index"                                 : "assessment",
     "com.castsoftware.greenit"                                    : "assessment",
@@ -341,6 +341,7 @@ var extensionsDirectory = {
     "com.castsoftware.grpcjava"                                   : "technology",
     "com.castsoftware.uc.stripes"                                 : "technology",
     "com.castsoftware.labs.idms.db"                               : "technology",
+    "com.castsoftware.mainframe"                                  : "technology",    
 
 
     "com.castsoftware.labs.db2.manifest.to.ddl"                   : "analysis",
