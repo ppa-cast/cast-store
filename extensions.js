@@ -184,6 +184,7 @@ var extensionsDirectory = {
     "com.castsoftware.aip.architecturelibrary"                    : "platform",
     "com.castsoftware.aip.dashboard.restapi"                      : "platform",
     "com.castsoftware.aip.metrics-documentation"                  : "platform",
+    "com.castsoftware.aip.metrics-documentation.zh"               : "platform",
     "com.castsoftware.webinstaller"                               : "platform",
     "com.castsoftware.uc.azureintegration"                        : "platform",
     "com.castsoftware.sherlock"                                   : "platform",
