@@ -144,6 +144,7 @@ var extensionsDirectory = {
     "com.castsoftware.omg-atdm"                                   : "assessment",
     "com.castsoftware.owasp-index"                                : "assessment",
     "com.castsoftware.qualitystandards"                           : "assessment",
+    "com.castsoftware.uc.peoplesoft.delta.size"                   : "assessment",
     
     "com.castsoftware.uc.security.custom.rules"                   : "rules",
     "com.castsoftware.uc.cwe"                                     : "rules",
@@ -151,7 +152,6 @@ var extensionsDirectory = {
     "com.castsoftware.uc.COMCloudRule"                            : "rules",
     "com.castsoftware.uc.pl1.custom.rules"                        : "rules",    
     "com.castsoftware.uc.peoplesoft.security"                     : "rules",
-    "com.castsoftware.uc.peoplesoft.delta.size"                   : "rules",
     "com.castsoftware.uc.cwe4fda"                                 : "rules",    
     "com.castsoftware.uc.dotNetRules"                             : "rules",
     "com.castsoftware.uc.jee.qr.infinite.loops"                   : "rules",    
