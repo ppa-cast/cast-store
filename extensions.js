@@ -190,6 +190,7 @@ var extensionsDirectory = {
     "com.castsoftware.sherlock"                                   : "platform",
     "com.castsoftware.imaging.etl"                                : "platform",
     "com.castsoftware.imaging.docker"                             : "platform",
+    "com.castsoftware.uc.demeter"                                 : "platform",
     
     "com.castsoftware.aip.datamart"                               : "reporting",
     "com.castsoftware.labs.templates.for.report.generator"        : "reporting",
