@@ -344,6 +344,7 @@ var extensionsDirectory = {
     "com.castsoftware.uc.stripes"                                 : "technology",
     "com.castsoftware.labs.idms.db"                               : "technology",
     "com.castsoftware.mainframe"                                  : "technology",    
+    "com.castsoftware.uc.webmethods"                              : "technology",    
 
 
     "com.castsoftware.labs.db2.manifest.to.ddl"                   : "analysis",
