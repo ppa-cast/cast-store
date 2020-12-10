@@ -347,6 +347,7 @@ var extensionsDirectory = {
     "com.castsoftware.labs.idms.db"                               : "technology",
     "com.castsoftware.mainframe"                                  : "technology",    
     "com.castsoftware.uc.webmethods"                              : "technology",    
+    "com.castsoftware.camel"                                      : "technology",    
 
 
     "com.castsoftware.labs.db2.manifest.to.ddl"                   : "analysis",
