@@ -351,7 +351,7 @@ var extensionsDirectory = {
     "com.castsoftware.mainframe"                                  : "technology",    
     "com.castsoftware.uc.webmethods"                              : "technology",    
     "com.castsoftware.camel"                                      : "technology",    
-
+    "com.castsoftware.uc.mendix.auto"                             : "technology",    
 
     "com.castsoftware.labs.db2.manifest.to.ddl"                   : "analysis",
     "com.castsoftware.labs.jcl.to.shell"                          : "analysis",
