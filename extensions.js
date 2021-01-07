@@ -131,6 +131,9 @@ var extensionsDirectory = {
     "com.castsoftware.uc.salesservice"                            : "analysis",
     "com.castsoftware.uc.cpp.env.profile.generator"               : "analysis",
     "com.castsoftware.uc.generic.queue"                           : "analysis",
+    "com.castsoftware.java2program"                               : "analysis",
+    "com.castsoftware.labs.db2batch.cobol.link"                   : "analysis",
+    "com.castsoftware.labs.tools.for.ibm.i"                       : "analysis",
 
     "com.castsoftware.cisq-index"                                 : "assessment",
     "com.castsoftware.greenit"                                    : "assessment",
