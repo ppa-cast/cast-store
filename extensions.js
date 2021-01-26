@@ -353,6 +353,7 @@ var extensionsDirectory = {
     "com.castsoftware.uc.webmethods"                              : "technology",    
     "com.castsoftware.camel"                                      : "technology",    
     "com.castsoftware.uc.mendix.auto"                             : "technology",    
+    "com.castsoftware.uc.ca.ideal.and.datacom"                    : "technology",    
 
     "com.castsoftware.uc.suspiciouscodeincentralreport"           : "deprecated",
     "com.castsoftware.uc.artifactsnotinmodulesreport"             : "deprecated",    
