@@ -42,6 +42,7 @@ var extensionsDirectory = {
     "com.castsoftware.labs.train.sdk.diags"                       : "training",
     "com.castsoftware.labs.train.sdk.jee.qr"                      : "training",
     "com.castsoftware.labs.train.sdk.ua.batch"                    : "training",
+    "com.castsoftware.imaging.tutorial"                           : "training",
 
 
     "com.castsoftware.labs.dataflow.extensions.collector"         : "dataflow",
