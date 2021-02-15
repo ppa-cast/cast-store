@@ -1,4 +1,4 @@
-This simple webapp is an alternative gallery for the [extendng.castsoftware.com](extendng.castsoftware.com) web site.
+This simple webapp is an alternative gallery for the [extend.castsoftware.com](extendng.castsoftware.com) web site.
 It aims to give a better visibility of the published extensions.
 
 Visit the demo site: [https://ppa-cast.github.io/cast-store/](https://ppa-cast.github.io/cast-store/)
