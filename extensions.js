@@ -197,6 +197,7 @@ var extensionsDirectory = {
     "com.castsoftware.uc.demeter"                                 : "platform",
     "com.castsoftware.aip.extendproxy"                            : "platform",
     "com.castsoftware.aipimaging"                                 : "platform",
+    "com.castsoftware.aip.docker"                                 : "platform",
     
     "com.castsoftware.aip.datamart"                               : "reporting",
     "com.castsoftware.labs.templates.for.report.generator"        : "reporting",
