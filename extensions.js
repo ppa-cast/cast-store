@@ -75,6 +75,7 @@ var extensionsDirectory = {
     "com.castsoftware.uc.npgsql.blackboxes"                       : "dataflow",
     "com.castsoftware.uc.oracle.odp.blackboxes"                   : "dataflow",
     "com.castsoftware.labs.owasp.java.html.sanitizer"             : "dataflow",
+    "com.castsoftware.labs.customizable.sanitizer"                : "dataflow",
     
     "com.castsoftware.automaticlinksvalidator"                    : "analysis",
     "com.castsoftware.awsjava"                                    : "analysis",
