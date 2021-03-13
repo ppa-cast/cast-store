@@ -322,7 +322,6 @@ var extensionsDirectory = {
     "com.castsoftware.uc.datastage"                               : "technology",
     "com.castsoftware.uc.easytrieve"                              : "technology",
     "com.castsoftware.uc.imsdc"                                   : "technology",
-    "com.castsoftware.uc.informix.db"                             : "technology",
     "com.castsoftware.uc.informix4gl"                             : "technology",
     "com.castsoftware.uc.ingres"                                  : "technology",
     "com.castsoftware.uc.jBPM"                                    : "technology",
@@ -338,7 +337,6 @@ var extensionsDirectory = {
     "com.castsoftware.uc.resteasy"                                : "technology",
     "com.castsoftware.uc.springwebflow"                           : "technology",
     "com.castsoftware.uc.sqr"                                     : "technology",
-    "com.castsoftware.uc.teradata"                                : "technology",
     "com.castsoftware.uc.xpdl"                                    : "technology",
     "com.castsoftware.uc.xquery"                                  : "technology",
     "com.castsoftware.uc.xslt"                                    : "technology",
@@ -380,7 +378,9 @@ var extensionsDirectory = {
     "com.castsoftware.labs.shelllinkperl"                         : "deprecated",
     "com.castsoftware.labs.transactionconfigurationkit"           : "deprecated",        
     "com.castsoftware.labs.deltareportanalysis"                   : "deprecated",
-    "com.castsoftware.uc.bpel"                                    : "deprecated",    
+    "com.castsoftware.uc.bpel"                                    : "deprecated",   
+    "com.castsoftware.uc.teradata"                                : "deprecated",   
+    "com.castsoftware.uc.informix.db"                             : "deprecated",    
 }
 
 
