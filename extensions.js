@@ -357,7 +357,8 @@ var extensionsDirectory = {
     "com.castsoftware.uc.ca.ideal.and.datacom"                    : "technology",    
     "com.castsoftware.uc.dmsii"                                   : "technology",    
     "com.castsoftware.uc.webspheretx"                             : "technology",    
-
+    "com.castsoftware.gwt"                                        : "technology",    
+    
     "com.castsoftware.uc.AnalysisCompletenessReport"              : "deprecated",
     "com.castsoftware.uc.springbatch"                             : "deprecated",
     "com.castsoftware.uc.suspiciouscodeincentralreport"           : "deprecated",
