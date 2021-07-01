@@ -130,6 +130,9 @@ var extensionsDirectory = {
     "com.castsoftware.labs.jee.EclipseLinkJPA"                    : "analysis",
     "com.castsoftware.uc.microsoft.practices.prism"               : "analysis",
     "com.castsoftware.java.service"                               : "analysis",
+    "com.castsoftware.awsdotnet"                                  : "analysis",
+    "com.castsoftware.uc.groovy"                                  : "analysis",
+    "com.castsoftware.uc.algol"                                   : "analysis",
     
     // Imaging
     "com.castsoftware.architecture"                               : "analysis",
