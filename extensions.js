@@ -78,7 +78,6 @@ var extensionsDirectory = {
     "com.castsoftware.labs.customizable.sanitizer"                : "dataflow",
     
     "com.castsoftware.automaticlinksvalidator"                    : "analysis",
-    "com.castsoftware.awsjava"                                    : "analysis",
     "com.castsoftware.datacolumnaccess"                           : "analysis",
     "com.castsoftware.deltatool"                                  : "analysis",
     "com.castsoftware.deltatooldoc"                               : "analysis",   
@@ -130,10 +129,7 @@ var extensionsDirectory = {
     "com.castsoftware.labs.jee.EclipseLinkJPA"                    : "analysis",
     "com.castsoftware.uc.microsoft.practices.prism"               : "analysis",
     "com.castsoftware.java.service"                               : "analysis",
-    "com.castsoftware.awsdotnet"                                  : "analysis",
-    "com.castsoftware.uc.groovy"                                  : "analysis",
-    "com.castsoftware.uc.algol"                                   : "analysis",
-    
+
     // Imaging
     "com.castsoftware.architecture"                               : "analysis",
     "com.castsoftware.uc.artemis"                                 : "analysis",
@@ -362,6 +358,10 @@ var extensionsDirectory = {
     "com.castsoftware.uc.dmsii"                                   : "technology",    
     "com.castsoftware.uc.webspheretx"                             : "technology",    
     "com.castsoftware.gwt"                                        : "technology",    
+    "com.castsoftware.awsdotnet"                                  : "technology",
+    "com.castsoftware.uc.groovy"                                  : "technology",
+    "com.castsoftware.uc.algol"                                   : "technology",
+    "com.castsoftware.awsjava"                                    : "technology",    
     
     "com.castsoftware.uc.AnalysisCompletenessReport"              : "deprecated",
     "com.castsoftware.uc.springbatch"                             : "deprecated",
