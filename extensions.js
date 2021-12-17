@@ -129,12 +129,13 @@ var extensionsDirectory = {
     "com.castsoftware.labs.jee.EclipseLinkJPA"                    : "analysis",
     "com.castsoftware.uc.microsoft.practices.prism"               : "analysis",
     "com.castsoftware.java.service"                               : "analysis",
+    "com.castsoftware.dotnet.service"                             : "analysis",
+    "com.castsoftware.mainframe.sensitivedata"                    : "analysis",
 
     // Imaging
     "com.castsoftware.architecture"                               : "analysis",
     "com.castsoftware.uc.artemis"                                 : "analysis",
     "com.castsoftware.uc.imagingeligibilitytool"                  : "analysis",
-           
 
     "com.castsoftware.cisq-index"                                 : "assessment",
     "com.castsoftware.greenit"                                    : "assessment",
@@ -198,6 +199,7 @@ var extensionsDirectory = {
     "com.castsoftware.aip.extendproxy"                            : "platform",
     "com.castsoftware.aipimaging"                                 : "platform",
     "com.castsoftware.aip.docker"                                 : "platform",
+    "com.castsoftware.aip.dashboard.servicepartitioner"           : "platform",
     
     "com.castsoftware.aip.datamart"                               : "reporting",
     "com.castsoftware.labs.templates.for.report.generator"        : "reporting",
@@ -362,6 +364,7 @@ var extensionsDirectory = {
     "com.castsoftware.uc.groovy"                                  : "technology",
     "com.castsoftware.uc.algol"                                   : "technology",
     "com.castsoftware.awsjava"                                    : "technology",    
+    "com.castsoftware.swing"                                      : "technology",
     
     "com.castsoftware.uc.AnalysisCompletenessReport"              : "deprecated",
     "com.castsoftware.uc.springbatch"                             : "deprecated",
