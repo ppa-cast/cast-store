@@ -136,6 +136,8 @@ var extensionsDirectory = {
     "com.castsoftware.architecture"                               : "analysis",
     "com.castsoftware.uc.artemis"                                 : "analysis",
     "com.castsoftware.uc.imagingeligibilitytool"                  : "analysis",
+    "com.castsoftware.cloudconfig"                                : "analysis",
+    "com.castsoftware.codelines"                                  : "analysis",
 
     "com.castsoftware.cisq-index"                                 : "assessment",
     "com.castsoftware.greenit"                                    : "assessment",
