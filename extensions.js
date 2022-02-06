@@ -1,6 +1,6 @@
 var categories = {
     'platform': {
-        title: 'AIP features',
+        title: 'MRI features',
         description: 'Platform applications & components'
     },
     'technology': {
@@ -35,6 +35,10 @@ var categories = {
         title: 'Training',
         description: 'Examples to create custom quality rules with the Python SDK and the Metrics Compiler'
     },
+    'highlight': {
+        title: 'Highlight',
+        description: 'Utilities for Highlight'
+    },    
 }; 
 
 var extensionsDirectory = {
@@ -131,7 +135,9 @@ var extensionsDirectory = {
     "com.castsoftware.java.service"                               : "analysis",
     "com.castsoftware.dotnet.service"                             : "analysis",
     "com.castsoftware.mainframe.sensitivedata"                    : "analysis",
-
+    "com.castsoftware.highlight2mri"                              : "analysis",
+    "com.castsoftware.coremetrics"                                : "analysis",
+    
     // Imaging
     "com.castsoftware.architecture"                               : "analysis",
     "com.castsoftware.uc.artemis"                                 : "analysis",
@@ -212,7 +218,6 @@ var extensionsDirectory = {
     "com.castsoftware.uc.aepreport"                               : "reporting",
     "com.castsoftware.uc.analytics.aar"                           : "reporting",
     "com.castsoftware.uc.analytics.aar_engine"                    : "reporting",
-    "com.castsoftware.uc.analytics.datapond"                      : "reporting",
     "com.castsoftware.uc.cast2jira"                               : "reporting",
     "com.castsoftware.uc.kyt"                                     : "reporting",
     "com.castsoftware.uc.nuggets-finder"                          : "reporting",
@@ -367,6 +372,8 @@ var extensionsDirectory = {
     "com.castsoftware.uc.algol"                                   : "technology",
     "com.castsoftware.awsjava"                                    : "technology",    
     "com.castsoftware.swing"                                      : "technology",
+    
+    "com.castsoftware.uc.analytics.datapond"                      : "highlight",
     
     "com.castsoftware.uc.AnalysisCompletenessReport"              : "deprecated",
     "com.castsoftware.uc.springbatch"                             : "deprecated",
