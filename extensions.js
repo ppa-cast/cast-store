@@ -208,6 +208,7 @@ var extensionsDirectory = {
     "com.castsoftware.aipimaging"                                 : "platform",
     "com.castsoftware.aip.docker"                                 : "platform",
     "com.castsoftware.aip.dashboard.servicepartitioner"           : "platform",
+    "com.castsoftware.aip.console.standalone"                     : "platform",
     
     "com.castsoftware.aip.datamart"                               : "reporting",
     "com.castsoftware.labs.templates.for.report.generator"        : "reporting",
@@ -372,6 +373,7 @@ var extensionsDirectory = {
     "com.castsoftware.uc.algol"                                   : "technology",
     "com.castsoftware.awsjava"                                    : "technology",    
     "com.castsoftware.swing"                                      : "technology",
+    "com.castsoftware.sap"                                        : "technology",
     
     "com.castsoftware.uc.analytics.datapond"                      : "highlight",
     
