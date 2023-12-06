@@ -210,7 +210,9 @@ var extensionsDirectory = {
     "com.castsoftware.aip.docker"                                 : "platform",
     "com.castsoftware.aip.dashboard.servicepartitioner"           : "platform",
     "com.castsoftware.aip.console.standalone"                     : "platform",
-    
+    "com.castsoftware.profiler.cli"                               : "platform",
+    "com.castsoftware.consoleinformation"                         : "platform',
+        
     "com.castsoftware.aip.datamart"                               : "reporting",
     "com.castsoftware.labs.templates.for.report.generator"        : "reporting",
     "com.castsoftware.uc.aip2hl"                                  : "reporting",    
@@ -268,6 +270,9 @@ var extensionsDirectory = {
     "com.castsoftware.aip.console.delivery.folder.migration.tool" : "delivery", 
     "com.castsoftware.labs.manifest.to.ddl.conversion"            : "delivery", 
     "com.castsoftware.labs.proc.missingtable"                     : "delivery", 
+    "com.castsoftware.dmtsqlfilediscoverer"                       : "delivery", 
+    "com.castsoftware.dmtgenericfilediscoverer"                   : "delivery", 
+    "com.castsoftware.dmtjeemavendiscoverer"                      : "delivery", 
     
     "com.castsoftware.android"                                    : "technology",
     "com.castsoftware.angularjs"                                  : "technology",
@@ -375,6 +380,7 @@ var extensionsDirectory = {
     "com.castsoftware.awsjava"                                    : "technology",    
     "com.castsoftware.swing"                                      : "technology",
     "com.castsoftware.sap"                                        : "technology",
+    "com.castsoftware.jee.missingtable"                           : "technology",
     
     "com.castsoftware.uc.analytics.datapond"                      : "highlight",
     
