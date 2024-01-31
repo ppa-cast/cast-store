@@ -211,7 +211,7 @@ var extensionsDirectory = {
     "com.castsoftware.aip.dashboard.servicepartitioner"           : "platform",
     "com.castsoftware.aip.console.standalone"                     : "platform",
     "com.castsoftware.profiler.cli"                               : "platform",
-    "com.castsoftware.consoleinformation"                         : "platform',
+    "com.castsoftware.consoleinformation"                         : "platform",
         
     "com.castsoftware.aip.datamart"                               : "reporting",
     "com.castsoftware.labs.templates.for.report.generator"        : "reporting",
